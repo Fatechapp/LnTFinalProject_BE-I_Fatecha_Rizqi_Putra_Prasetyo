@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="{{asset('style/welcome.css')}}">
@@ -16,26 +16,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Website Aplikasi Pendataan Barang</h1>
+        <h1>Register as User</h1>
         <div class="login-container">
             <form method="" action="">
                 @csrf
                 <div class="form-group">
-                    <label for="username">Username</label>
+                    <label for="username">nama lengkap</label>
                     <input id="username" type="text" name="username" required autofocus>
                 </div>
-
+                <div class="form-group">
+                    <label for="username">email</label>
+                    <input id="email" type="text" name="email" required>
+                </div>  
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input id="password" type="password" name="password" required>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit">Login</button>
+                    <button type="submit">Register</button>
                 </div>
 
-                <div class="link-to-register">
-                    <p>belum memiliki akun? <a href="/register">klik di sini!</a></p>
+                <div class="link-to-login">
+                    <p>sudah memiliki akun? <a href="/">login</a></p>
                 </div>
 
             </form>
